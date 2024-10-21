@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prociono&family=Protest+Strike&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/mystyle.css" />
+    <title>Martial Arts and Physical Fitness</title>
+  </head>
+
+  <body>
+    <!-- navbar formular spoergsmål-->
+    <header>
+      <a href="index.html">
+        <img src="images/logopng.png" alt="logo" class="logo-png" />
+      </a>
+      <h2 class="logo">Martial Arts and Physical Fitness</h2>
+    </header>
+    <main>
+    <div class="navbar">
+      <div class="container flex">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <nav class="nav-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fitness.html">Fitness</a></li>
+            <li><a href="martialarts.html">Martial Arts</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+</main>
+    <!--paragraph med titel section-->
+    <section class="showcase">
+      <div class="container">
+        <div class="showcase-text">
+          <h1>Martial Arts</h1>
+          <p>Aarhus offers a wide selection of fighting sports.<br> <br>
+             You could be interested in self-defense, improving your fitness, or learning a new skill, Aarhus has a martial art for you. Explore the  popular options like karate, taekwondo, jiu-jitsu, muay thai, and many more. Find your perfect dojo and start your training adventure.</p>
+          <a href="fitness.html" class="btn btn-outline"
+            >Get started today! read more about fitness</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="questioncard">
+      <div class="container flex-container">
+        <h2>Submit a question.</h2>
+        <form>
+          <div class="form-control">
+            <input type="text" name="name" placeholder="Name" required />
+          </div>
+          <div class="form-control">
+            <input
+              type="text"
+              name="question"
+              placeholder="Your question"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <input type="text" name="email" placeholder="Your email" required />
+          </div>
+          <input type="submit" value="Send" class="btn btn-primary" />
+        </form>
+      </div>
+    </section>
+    <!--populære artikler-->
+    <section>
+      <div class="ARTICLES popular-arcticles">
+        <h2 class="stats-heading text-center my-1">MOST POPULAR ARTICLES</h2>
+        <div class="grid grid-3 text-center my-4">
+          <div>
+            <h3><a href="index.html">Motivation</a></h3>
+            <p class="text-secondary">
+              Mindset is one the main factors in improving your general health.
+              <br />It has been proven to be connected with your overall
+              health...
+            </p>
+          </div>
+          <div>
+            <h3><a href="index.html">MOTIVATION</a></h3>
+            <p class="text-secondary">
+              Motivation is the one obstacle that we all face<br />
+              However there are tricks to learn that can help you cheat your
+              mind...
+            </p>
+          </div>
+          <div>
+            <h3><a href="index.html">CARDIO</a></h3>
+            <p class="text-secondary">
+              These days as society we have gotten lazier. <br />
+              We no longer have a survival need for running fast and for long.
+              <br />We have gotten comfortable and this...
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>© 2024 Martial Arts and Physical Fitness.</p>
+    </footer>
+  </body>
+</html>

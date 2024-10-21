@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Prociono&family=Protest+Strike&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prociono&family=Protest+Strike&display=swap");
+/* query fra w3schools */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: rgb(230, 173, 173);
+  }
+}
+
+/* en farve værdig jeg giver til flere elementer på siderene*/
+:root {
+  --primary-color: rgb(248, 131, 131);
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Protest Strike", sans-serif;
+  color: #333;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--primary-color);
+  line-height: 2;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+.footer {
+  background-color: #bac095;
+  color: #000000;
+  font-size: 24px;
+  padding: 20px;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+}
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+h1,
+h2 {
+  font-size: 3rem;
+  color: white;
+  line-height: 1.5;
+  margin: 0 10px;
+}
+
+p {
+  margin: 0 15px;
+}
+img {
+  width: 100%;
+}
+
+.logo-png {
+  width: 40px;
+  text-align: center;
+  height: auto;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+
+.burger-menu span {
+  background-color: #000000;
+  height: 10px;
+  width: auto;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.nav-links {
+  background-color: rgb(243, 91, 91);
+  display: flex;
+  position: absolute;
+  justify-content:center;
+  flex-grow: 1;
+  width: 100%;
+  top: auto;
+  right: 0;
+  opacity: 0.8;
+}
+
+
+.nav-links {
+  height: auto;
+  overflow: visible;
+}
+
+.nav-links ul {
+  display: flex;
+  gap: 20px;
+}
+
+
+
+.nav-links ul li a {
+  color: #ffffff;
+  text-decoration: underline;
+  padding: 10px;
+  font-family: "Prociono", sans-serif;
+  display: block;
+}
+
+.nav-links ul li a:hover {
+  background-color: rgba(253, 213, 213, 0.1);
+  border-bottom: 2px solid white;
+}
+
+
+.navbar a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: 2px #fff solid;
+}
+
+/*showcase*/
+
+.showcase {
+  height: auto;
+  display: flex;
+  padding: 40px;
+  background-color: var(--primary-color);
+  color: #fff;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.showcase h1 {
+  font-size: 3rem;
+  color: #000000;
+  -webkit-text-stroke: 1px #ffffff;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.h1 {
+  vertical-align: center;
+  justify-content: center;
+}
+
+.logo {
+  font-family: "Protest Strike", sans-serif;
+  font-size: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+  text-align: center;
+  margin: 0;
+}
+
+.showcase p {
+  margin: 10px 0;
+  font-family: "prociono", serif;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.showcase .grid {
+  overflow: visible;
+  display: block;
+  margin-top: 20px;
+}
+
+.showcase-form {
+  position: absolute;
+  margin-left: 20px;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  padding: 40px;
+}
+
+.form-control {
+  margin: 15px 0;
+  background-color: #fdfcfc;
+}
+
+.showcase-title {
+  width: auto;
+  text-align: center;
+}
+
+.showcase-text {
+  flex: 1;
+  text-align: center;
+}
+
+.showcase-form {
+  max-width: 400px;
+  padding: 15px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+
+form {
+  padding: 20px;
+  z-index: 1;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.showcase-form input:focus {
+  outline: transparent;
+}
+
+/* classes jeg bruger på hele siden */
+.container {
+  max-width: 500px;
+  line-height: 1.5rem;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px 40px;
+}
+
+.card {
+  background-color: #bfa8a8;
+  justify-content: center;
+  margin: 0 auto;
+  float: none;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #220202;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+}
+
+.btn-outline {
+  background-color: rgb(212, 85, 85);
+  border: 5px #d14343;
+}
+
+.btn:hover {
+  transform: scale(0.9);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
